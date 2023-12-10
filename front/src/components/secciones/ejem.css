@@ -1,0 +1,40 @@
+
+
+
+
+.trecito{
+    position: absolute;
+  right: 0;
+  top: 25%;
+  left: 15%;
+  transform: translateY(-45%);
+}
+
+.card2{
+    max-width: 60rem;
+    max-height: 20rem;
+    opacity: 0.47;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+    .navbar-nav.navbar-right {
+        position: absolute;
+        right: 10%;
+    }
+
+.bottt{
+position: absolute;
+  right: 10;
+  top: 380%;
+  left:8.5%;
+}
+
+.bottt button:hover{
+    background-color: #ff3d00;
+}

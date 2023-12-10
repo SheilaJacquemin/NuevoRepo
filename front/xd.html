@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideFor para Empresas de Transporte</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav className="navbar navbar-expand-lg navbar-black">
+        <div className="container">
+            <a className="navbar-brand" href="#">RideFor</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#introduction">Introducción</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#features">Funcionalidades Clave</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#benefits">Beneficios y Ventajas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="introduction" className="section">
+        <div className="container">
+            <h2>Introducción a RideFor para Empresas de Transporte</h2>
+            <p>RideFor es una plataforma en línea diseñada para mejorar la eficiencia y la rentabilidad de las empresas de transporte en Formosa.</p>
+            <img src="./src/assets/empresas.jpg" alt="Introducción a RideFor">
+        </div>
+    </section>
+
+    <section id="features" className="section">
+        <div className="container">
+            <h2>Funcionalidades Clave</h2>
+            <ul className="list-group">
+                <li className="list-group-item">Gestión de flotas</li>
+                <li className="list-group-item">Reservas en línea</li>
+                <li className="list-group-item">Seguimiento en tiempo real</li>
+                <!-- Agrega más características aquí -->
+            </ul>
+            <img src="./src/assets/auto.jpg" alt="Funcionalidades Clave de RideFor">
+        </div>
+    </section>
+
+    <section id="benefits" className="section">
+        <div className="container">
+            <h2>Beneficios y Ventajas</h2>
+            <p>Al utilizar RideFor, las empresas de transporte pueden experimentar beneficios como la optimización de rutas, la reducción de costos operativos y la mejora de la satisfacción del cliente.</p>
+            <!-- Agrega más beneficios aquí -->
+            <img src="./src/assets/empresas.jpg" alt="Beneficios de RideFor">
+        </div>
+    </section>
+
+    <!-- Agrega más secciones según sea necesario -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Habilitar el desplazamiento suave al hacer clic en los enlaces de navegación interna
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

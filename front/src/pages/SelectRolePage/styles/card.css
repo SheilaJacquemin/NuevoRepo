@@ -1,0 +1,48 @@
+
+.card {
+  max-width: 400px !important;
+  max-height: 500px !important;
+  transition: all 0.7s linear;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.4s linear;
+}
+
+.card-body {
+  padding: 2rem 0 !important;
+}
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+.carta-principal{
+  font-family: 'Oxygen', sans-serif;
+    height: 100vh;
+    background: rgb(238, 69, 64);
+    background: linear-gradient(
+      180deg,
+      rgb(209, 1, 1) 0%,
+      rgb(174, 1, 1) 15%,
+      rgb(129, 0, 0) 30%,
+      rgb(84, 1, 1) 45%,
+      rgb(69, 0, 0) 100%
+    );
+}

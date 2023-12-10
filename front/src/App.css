@@ -1,0 +1,196 @@
+
+/* src/App.css */
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* .contenedor{
+  background: linear-gradient(#b20f38, #fde1c4);
+} */
+
+/* .container{
+  height: 80vh;
+  
+} */
+
+.container-padding-x {
+
+  width: 100%;
+}
+
+.formulario{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0%;
+}
+
+.contenido{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media screen and (max-width: 480px) {
+  .contenido{
+    grid-template-columns: 1fr;
+    color: red;
+  }
+}
+
+
+.empresas-contenido{
+  align-items: center;
+  align-content: center;
+  display: flex;
+ 
+  justify-content: center;
+
+
+}
+
+.right-nav button {
+  margin-left: 10px;
+}
+.nav-item1{
+  border-style: hidden;
+}
+
+.nav-link:hover{
+background-color: transparent;
+color: #ed5427;
+
+}
+
+#navbarcito{
+  height: 55px;
+  background-color: transparent !important;
+color: #ed5427;
+
+}
+
+/* Estilos para las secciones */
+
+.leaflet-container {
+  height: 500px;
+  width: 500px;
+}
+
+.banner {
+  background-color: #076461;
+  color: #ffffff; /* Blanco */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner2 {
+  background-color: #b62d03;
+  color: #ffffff; /* Blanco */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.bg-body-tertiary{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+     /* Centra verticalmente */
+    /* Opcional: ajusta el tamaño del contenedor si es necesario */
+    /* width: 100%;
+    height: 100vh; */
+     /* Esto es útil si deseas centrar verticalmente en toda la altura de la ventana */
+  }
+  
+/* Cambiar el color del texto al pasar el mouse (hover) */
+.medio:hover {
+  background-color: #ed5427; /* Naranja oscuro */
+  border-color: #ff4d01; /* Borde en naranja oscuro */
+}
+
+.derecha:hover{
+  background-color: #acc0fb;
+}
+
+.izquierda:hover{
+  background-color: #ed5427;
+}
+
+.registrar:hover{
+  background-color: #ffffff;
+}
+
+.btn-primary:hover{
+  background-color: #8c2303;
+}
+.btn-outline-success{
+  background-color: #ffc476;
+}
+
+.btn-primary{
+  background-color: #ff3d00; /* Naranja */
+  color: #ffffff; /* Blanco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.services,
+.testimonials,
+.coverage,
+.faq,
+.contact,
+.social-media,
+.app-download {
+  background-color: #ffffff; /* Blanco */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #000000; /* Negro */
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.app-download a {
+  display: block;
+  margin-top: 20px;
+}
+
+.app-download img {
+  max-width: 150px;
+}
