@@ -2,6 +2,7 @@ import React from "react";
 import Map from "../../components/Map";
 import FormViaje from "./components/FormViaje";
 import Navusuario from "../nav/Navusuario";
+import contador from "../../assets/contador.jpeg";
 
 const ViajePage = () => {
   return (
@@ -20,6 +21,12 @@ const ViajePage = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <h1 style={{ display: "flex", justifyContent: "center" }}>
+        contador de viajes
+      </h1>
+      <img src={contador} style={{ paddingLeft: "150px" }} alt="" />
     </div>
   );
 };
