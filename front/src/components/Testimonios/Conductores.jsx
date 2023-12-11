@@ -9,7 +9,7 @@ const Conductores = () => {
         style={{
           width: "700px",
           height: "400px",
-          marginLeft: "350px",
+          marginLeft: "440px",
         }}
       />
       <div className="accordion-item">

@@ -27,7 +27,7 @@ const MenuInicio = () => {
               }}
             >
               ¡Hola! Bienvenido a RideFor... <br />
-              ¿Qué queres hacer?
+              ¿Qué quieres hacer?
             </h1>
           </div>
         </div>
