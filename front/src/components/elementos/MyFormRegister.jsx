@@ -1,43 +1,40 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+import { useNavigate } from "react-router-dom"; // Importa useNavigate
 import swal from "sweetalert";
 
-
 const MyFormRegister = () => {
-
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   const [user, setUser] = useState({
     name: "",
     lastname: "",
     email: "",
     password: "",
-    confirmPassword:"",
+    confirmPassword: "",
     phone: "",
-    image: null // Inicialmente, no se adjunta ninguna imagen
+    image: null, // Inicialmente, no se adjunta ninguna imagen
   });
 
   const handleInput = ({ target }) => {
     setUser({
       ...user,
-      [target.name]: target.value
+      [target.name]: target.value,
     });
-  }
+  };
 
   const handleImageChange = (event) => {
     setUser({
       ...user,
-      image: event.target.files[0] // Al seleccionar una imagen, se adjunta al registro
+      image: event.target.files[0], // Al seleccionar una imagen, se adjunta al registro
     });
-  }
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const formData = new FormData();
     for (const key in user) {
-      if (key === 'image' && user[key]) {
+      if (key === "image" && user[key]) {
         formData.append(key, user[key]);
       } else {
         formData.append(key, user[key]);
@@ -45,15 +42,18 @@ const MyFormRegister = () => {
     }
 
     const opciones = {
-      method: 'POST', // Cambia el método a 'POST'
+      method: "POST", // Cambia el método a 'POST'
       body: formData,
     };
 
-    if(user.password!==user.confirmPassword){
-      return alert("las contraseñas no coinciden")
+    if (user.password !== user.confirmPassword) {
+      return alert("las contraseñas no coinciden");
     }
     try {
-      const resp = await fetch('http://localhost:3000/api/users/createWithImage', opciones);
+      const resp = await fetch(
+        "http://localhost:3000/api/users/createWithImage",
+        opciones
+      );
 
       if (resp.ok) {
         setUser({
@@ -63,7 +63,7 @@ const MyFormRegister = () => {
           password: "",
           confirmPassword: "",
           phone: "",
-          image: null
+          image: null,
         });
         swal({
           title: "Registro exitoso",
@@ -75,19 +75,22 @@ const MyFormRegister = () => {
         }).then(() => {
           //
         });
-        // navigate('/iniciarSesion') 
+        // navigate('/iniciarSesion')
       } else {
-        alert('Revise las credenciales y vuelva a intentar');
+        alert("Revise las credenciales y vuelva a intentar");
       }
     } catch (error) {
-      console.error('Error en la solicitud:', error);
+      console.error("Error en la solicitud:", error);
     }
-  }
-
+  };
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit} className="formulario" encType="multipart/form-data">
+      <form
+        onSubmit={handleSubmit}
+        className="formulario"
+        encType="multipart/form-data"
+      >
         <div>
           <label htmlFor="name">Nombre:</label>
           <input
@@ -160,7 +163,7 @@ const MyFormRegister = () => {
         <div>
           <label htmlFor="phone">Teléfono:</label>
           <input
-            className="form-control bg-transparent text-light"
+            className="form-control bg-transparent text-white"
             type="text"
             id="phone"
             name="phone"
@@ -173,7 +176,7 @@ const MyFormRegister = () => {
         <div>
           <label htmlFor="image">Imagen de Perfil:</label>
           <input
-            className="form-control bg-transparent text-light"
+            className="form-control bg-transparent text-white"
             type="file"
             id="image"
             name="image"
@@ -182,18 +185,20 @@ const MyFormRegister = () => {
           />
         </div>
         {user.image && (
-            <div>
-              <img
-                src={URL.createObjectURL(user.image)}
-                alt="Imagen de perfil"
-                style={{ maxWidth: '200px' }}
-              />
-            </div>
-)}
+          <div>
+            <img
+              src={URL.createObjectURL(user.image)}
+              alt="Imagen de perfil"
+              style={{ maxWidth: "200px" }}
+            />
+          </div>
+        )}
         <br />
 
         <div>
-          <button type="submit" className="btn btn-outline-light">Registrarse</button>
+          <button type="submit" className="btn btn-outline-light">
+            Registrarse
+          </button>
         </div>
       </form>
     </div>
