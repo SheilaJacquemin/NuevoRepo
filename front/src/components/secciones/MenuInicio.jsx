@@ -5,7 +5,6 @@ import "./../secciones/ejem.css";
 const MenuInicio = () => {
   return (
     <div className="">
-     
       <div className="unito">
         <div className="dosito">
           <img
@@ -19,17 +18,21 @@ const MenuInicio = () => {
           />
         </div>
         <div className="trecito">
-          <div className="card2 text-bg-light mb-3">
-            <div className="card-header">Chat </div>
-            <h1>¡Hola! Bienvenido a RideFor... ¿Qué queres hacer?</h1>
-              
-            </div>
-            <div className="bottt">
-                <button className="btn btn-outline-secondary">Solicitar Viaje</button>
-              </div>
+          <div className="card2 titulopp">
+            <h1
+              style={{
+                fontFamily: "cursive",
+                fontWeight: "900",
+                fontSize: "50px",
+              }}
+            >
+              ¡Hola! Bienvenido a RideFor... <br />
+              ¿Qué queres hacer?
+            </h1>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

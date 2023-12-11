@@ -4,11 +4,11 @@ import autito from "../../../public/autito.png";
 import { Modal } from "react-bootstrap";
 // import logo from "../../assets/logo.png"
 // import FormLogin from '../../pages/HomePage/components/FormLogin'
-import MyForm from "../elementos/MyForm";
+// import MyForm from "../elementos/MyForm";
 import "./nav.css";
 import HomePage from "../../pages/HomePage";
 
-const Nav = () => {
+const Navconductores = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -53,40 +53,19 @@ const Nav = () => {
                   <Link
                     className="nav-link"
                     style={{ fontSize: "20px" }}
-                    to="/pasajeros"
+                    to="/usuarioconductor"
                   >
-                    Pasajeros
+                    Solicitudes
                   </Link>
                 </li>
                 <li className="nav-item2">
                   <Link
                     className="nav-link"
                     style={{ fontSize: "20px" }}
-                    to="/conductores"
+                    to="/Ayudac"
                   >
-                    Conductores
+                    Ayuda
                   </Link>
-                </li>
-                <li className="nav-item2">
-                  <Link
-                    className="nav-link"
-                    style={{ fontSize: "20px" }}
-                    to="/empresas"
-                  >
-                    Empresas
-                  </Link>
-                </li>
-              </ul>
-
-              <ul className="nav navbar-nav navbar-right">
-                <li className="nav-item3">
-                  <button
-                    className="nav-link"
-                    style={{ fontSize: "20px" }}
-                    onClick={openModal}
-                  >
-                    Iniciar Sesión
-                  </button>
                 </li>
               </ul>
             </ul>
@@ -102,4 +81,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navconductores;

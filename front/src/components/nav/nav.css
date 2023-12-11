@@ -1,14 +1,5 @@
-
-  
-  .modal-content{
-    width: 600px; /* Ajusta el ancho según tus necesidades */
-    margin: 0 auto; /* Centra el modal en la pantalla */ 
-    border: none;
-   background-color: transparent !important;
-   opacity: 0.9;
-   height: 200vh;
+.nav-item2 {
+  padding-left: 40px;
 }
-
-.modal-body{
-    padding: 0%;
+.nav-link {
 }

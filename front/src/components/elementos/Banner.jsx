@@ -1,21 +1,25 @@
-import React from 'react'
+import React from "react";
 
 const Banner = () => {
   return (
     <div>
-          <section className="banner">
-            <div className="header">
-              <h1>RideFor - Tu transporte confiable</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus dolore reiciendis doloribus esse ad et dolores sequi
-                beatae molestias magnam provident tempora cumque quo rerum non
-                tempore cum, alias repellat?
-              </p>
-            </div>
-          </section>
+      <section className="banner">
+        <div
+          className="header"
+          style={{ textAlign: "center", width: "1000px", margin: "auto" }}
+        >
+          <h1>RideFor - Tu transporte confiable</h1>
+          <p>
+            Queremos que te muevas con libertad, de manera ágil y estés
+            conectado con las personas y lugares que más te importan. Es por eso
+            que estamos comprometidos con la seguridad. Con la misión de
+            proporcionar un servicio de transporte confiable y seguro para
+            todos.
+          </p>
         </div>
-  )
-}
+      </section>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

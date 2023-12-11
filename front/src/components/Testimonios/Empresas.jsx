@@ -1,10 +1,10 @@
 import React from "react";
-import pasajeros from "../../assets/pasajeros.jpeg";
-const Testimonios = () => {
+import empresas from "../../assets/empresas.jpeg";
+const Empresas = () => {
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
       <img
-        src={pasajeros}
+        src={empresas}
         alt=""
         style={{
           width: "700px",
@@ -22,7 +22,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapseOne"
           >
-            Registro y Perfil Personalizado:
+            Reservas Anticipadas:
           </button>
         </h2>
         <div
@@ -31,10 +31,10 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            RideFor ofrece a los pasajeros la facilidad de registro,
-            permitiéndoles crear perfiles personalizados con información
-            relevante, preferencias de viaje y opciones de pago. Esto garantiza
-            una experiencia personalizada y eficiente desde el principio.
+            - Las empresas pueden aprovechar la función de reservas anticipadas
+            para garantizar la disponibilidad de transporte para sus empleados
+            en eventos corporativos, reuniones importantes u otras ocasiones
+            especiales.
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapseTwo"
           >
-            Solicitud de Viajes Intuitiva:
+            Herramientas de Administración:
           </button>
         </h2>
         <div
@@ -57,11 +57,10 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            La aplicación móvil y el sitio web de RideFor proporcionan a los
-            pasajeros una interfaz intuitiva para solicitar viajes. Desde la
-            comodidad de su dispositivo, los usuarios pueden especificar su
-            ubicación actual y destino deseado, obteniendo un presupuesto
-            estimado antes de confirmar la solicitud.
+            - RideFor proporciona herramientas avanzadas de administración de
+            flotas para que las empresas supervisen y gestionen eficientemente
+            múltiples vehículos y conductores. Esto incluye seguimiento en
+            tiempo real, informes de rendimiento y mantenimiento programado.
           </div>
         </div>
       </div>
@@ -75,7 +74,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapseThree"
           >
-            Asignación Eficiente de Conductores:
+            Seguridad y Verificación:
           </button>
         </h2>
         <div
@@ -84,11 +83,11 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            RideFor se enorgullece de asignar conductores de manera eficiente y
-            rápida. Los pasajeros no solo obtienen la certeza de que su
-            solicitud será atendida rápidamente, sino que también se benefician
-            de la optimización de rutas para llegar a su destino de la manera
-            más eficiente posible.
+            - Para garantizar la seguridad de los empleados, RideFor implementa
+            medidas de verificación exhaustivas para los conductores asociados
+            con programas corporativos. Esto puede incluir verificación de
+            antecedentes, evaluación del historial de conducción y verificación
+            de documentación del vehículo.
           </div>
         </div>
       </div>
@@ -102,7 +101,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapsefour"
           >
-            Seguimiento en Tiempo Real:
+            Personalización de Servicios:
           </button>
         </h2>
         <div
@@ -111,11 +110,9 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            La preocupación por la ubicación del conductor es cosa del pasado.
-            Los pasajeros pueden realizar un seguimiento en tiempo real del
-            recorrido del conductor asignado a través de la aplicación móvil o
-            el sitio web de RideFor, lo que brinda tranquilidad y control
-            durante todo el viaje.
+            - Las empresas pueden personalizar la experiencia de viaje para sus
+            empleados, estableciendo políticas internas como preferencias de
+            vehículo, límites de gasto y restricciones geográficas.
           </div>
         </div>
       </div>
@@ -129,7 +126,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapsefive"
           >
-            Proceso de Pago Electrónico:
+            Integración con Sistemas Empresariales:
           </button>
         </h2>
         <div
@@ -138,10 +135,9 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            RideFor simplifica el proceso de pago al ofrecer opciones de pago
-            electrónico. Los pasajeros pueden realizar transacciones de forma
-            segura y sin complicaciones, incluso tienen la opción de agregar una
-            propina si así lo desean, todo integrado en la plataforma.
+            - RideFor ofrece integración con sistemas empresariales existentes,
+            facilitando la gestión y el seguimiento de los desplazamientos en
+            conjunto con otras herramientas utilizadas por la empresa.
           </div>
         </div>
       </div>
@@ -155,7 +151,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapsesix"
           >
-            Experiencia de Viaje Seguro:
+            Facturación:
           </button>
         </h2>
         <div
@@ -164,12 +160,10 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            La prioridad de RideFor es la seguridad del pasajero. Se promueve un
-            ambiente seguro a través de conductores verificados y la posibilidad
-            de calificar y proporcionar comentarios sobre la experiencia del
-            viaje. Además, la plataforma está diseñada para adaptarse a las
-            necesidades de los usuarios, ya sea para desplazamientos diarios,
-            traslados al aeropuerto, o cualquier otra ocasión.
+            - Las empresas pueden aprovechar la facturación centralizada para
+            simplificar los procesos contables, recibiendo facturas consolidadas
+            y detalladas que incluyen todos los desplazamientos realizados por
+            los empleados.
           </div>
         </div>
       </div>
@@ -183,7 +177,7 @@ const Testimonios = () => {
             aria-expanded="false"
             aria-controls="flush-collapseseven"
           >
-            Comunicación y Comentarios:
+            Atención al Cliente Empresarial:
           </button>
         </h2>
         <div
@@ -192,10 +186,36 @@ const Testimonios = () => {
           data-bs-parent="#accordionFlushExample"
         >
           <div className="accordion-body">
-            RideFor fomenta la comunicación abierta entre pasajeros y
-            conductores. Los usuarios pueden calificar y dejar comentarios sobre
-            cada viaje, contribuyendo así a la transparencia y calidad del
-            servicio.
+            - RideFor proporciona un servicio de atención al cliente dedicado
+            para empresas, garantizando una respuesta rápida a consultas,
+            solución de problemas y asistencia en la gestión de cuentas
+            corporativas.
+          </div>
+        </div>
+      </div>
+      <div className="accordion-item">
+        <h2 className="accordion-header">
+          <button
+            className="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseeight"
+            aria-expanded="false"
+            aria-controls="flush-collapseeight"
+          >
+            Reportes Analíticos:
+          </button>
+        </h2>
+        <div
+          id="flush-collapseeight"
+          className="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div className="accordion-body">
+            - RideFor ofrece informes analíticos detallados para que las
+            empresas puedan analizar el gasto en transporte, patrones de uso y
+            eficiencia operativa, contribuyendo así a la toma de decisiones
+            informada.
           </div>
         </div>
       </div>
@@ -203,4 +223,4 @@ const Testimonios = () => {
   );
 };
 
-export default Testimonios;
+export default Empresas;

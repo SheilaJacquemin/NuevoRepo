@@ -1,16 +1,16 @@
-import React from 'react'
-import Nav from "../nav/Nav"
-import Testimonios from '../Testimonios/Testimonios'
-import Prueba from '../Testimonios/Prueba'
+import React from "react";
+import Nav from "../nav/Nav";
+import Testimonios from "../Testimonios/Testimonios";
+import Prueba from "../Testimonios/Prueba";
+import Conductores from "../Testimonios/Conductores";
 
 const VistaConductores = () => {
   return (
-   <>
-   <Nav/>
-   {/* <Testimonios/> */}
-   {/* <ViajePage/> */}
-   </>
-  )
-}
+    <>
+      <Nav />
+      <Conductores />
+    </>
+  );
+};
 
-export default VistaConductores
+export default VistaConductores;

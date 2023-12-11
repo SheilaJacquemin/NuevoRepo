@@ -1,15 +1,14 @@
-import React from 'react'
-import Nav from '../nav/Nav'
-import Testimonios from '../Testimonios/Testimonios'
-
+import React from "react";
+import Nav from "../nav/Nav";
+import Testimonios from "../Testimonios/Testimonios";
 
 const VistaPasajeros = () => {
   return (
     <>
-   <Nav/>
-   <Testimonios/>
-   </>
-  )
-}
+      <Nav />
+      <Testimonios />
+    </>
+  );
+};
 
-export default VistaPasajeros
+export default VistaPasajeros;
